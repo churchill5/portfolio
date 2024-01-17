@@ -1,0 +1,156 @@
+.home {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.right > img {
+    height: 480px;
+    box-shadow: 5px 5px 30px 15px red;
+    
+}
+@keyframes zunguka {
+    0% {
+        box-shadow: 5px 5px 30px 20px red;
+    }
+    25% {
+        box-shadow: 5px 5px 30px 20px blue;
+    }
+    50% {
+        box-shadow: 5px 5px 30px 20px white;
+    }
+    75% {
+        box-shadow: 5px 5px 30px 20px yellow;
+    }
+    100% {
+        box-shadow: 5px 5px 30px 20px green;
+    }
+}
+.rotating {
+        animation: zunguka 3s linear infinite;
+    }
+.left > h4 {
+    color: rgb(155, 27, 247);
+    font-size: 23px;
+}
+.left > h1 {
+    color: rgb(253, 241, 241);
+}
+.left > h3 {
+    color: black;
+}
+.left > button {
+    background: linear-gradient(to right, rgb(194, 40, 40), rgb(102, 211, 245));;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    transition: 300ms ease-in;
+}
+.left > button:hover {
+    background: rgb(31, 150, 31);
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+    }
+    .left > h4 {
+        margin-bottom: 0;
+        font-size: 25px;
+        
+    }
+    .left > h1 {
+        margin: 0px 5px;
+        font-size: 45px;
+    }
+    .left > h3 {
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+    .left {
+        margin-bottom: 4rem;
+        border-bottom: 2px solid red;
+        
+    }
+    .left > button {
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 0px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        justify-content: space-around;
+    }
+    .right > img {
+        height: 380px;
+        
+    }
+    .left > h4 {
+        margin-bottom: 0;
+        font-size: 20px;
+        
+    }
+    .left > h1 {
+        margin: 0px 5px;
+        font-size: 40px;
+    }
+    .left > h3 {
+        margin-bottom: 0px;
+        margin-top: 0;
+    }
+    .left {
+        margin-bottom: 4rem;
+        border-bottom: 2px solid red;
+        
+    }
+    .left > button {
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .left > h4 {
+        margin-bottom: 0;
+        font-size: 30px;
+        
+    }
+    .left > h1 {
+        margin: 0px 5px;
+        font-size: 70px;
+    }
+    .left > h3 {
+        margin-bottom: 0px;
+        margin-top: 0;
+        font-size: 35px;
+    }
+    .left {
+        margin-bottom: 4rem;
+        
+        
+    }
+    .left > button {
+        margin: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+}

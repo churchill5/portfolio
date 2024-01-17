@@ -1,0 +1,23 @@
+.fuata {
+    font-size: 8px;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
+    background: linear-gradient(to right, rgb(255, 0, 170), rgb(43, 73, 207));
+    align-items: center;
+    justify-content: center;
+}
+.fuata > button {
+    margin: 10px;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(32, 8, 119), rgb(210, 240, 43));
+    border-radius: 7px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) and (min-width: 0px) {
+    .fuata {
+        display: none;
+    }
+}
